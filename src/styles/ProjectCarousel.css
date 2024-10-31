@@ -1,0 +1,58 @@
+.carousel-container {
+  width: 100%;
+  padding: 20px 0;
+  position: relative;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  gap: 20px;
+  padding: 20px;
+  cursor: grab;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.carousel::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.carousel:active {
+  cursor: grabbing;
+}
+
+.project-card {
+  min-width: 300px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 1px solid #eaeaea;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+  justify-content: center;
+  align-items: center; 
+}
+
+.tag {
+  background: #f0f0f0;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 0.875rem;
+  text-align: center; 
+} 
